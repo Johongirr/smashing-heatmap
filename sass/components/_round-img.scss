@@ -1,0 +1,28 @@
+.round-img {
+    border-radius: 5px;
+    transform: rotate(-10deg);
+    background-color: rgba($hierarchy-weight-2, .9);
+
+    &--xl {
+        width: 15rem;
+        height: 15rem;
+        
+    }
+    &--lg {
+        width: 10rem;
+        height: 10rem;
+        box-shadow: 0 .7rem 1.5rem rgba(0,0,0,.4);
+    }
+    &--medium {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+    &--sm {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    &--xs {
+        width: 3rem;
+        height: 3rem;
+    }
+}

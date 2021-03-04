@@ -1,0 +1,34 @@
+.headline-content {
+    padding: 6rem 0;
+    &__row {
+        display: flex;
+        gap: 3rem;
+        
+        & > *:first-child {
+            flex: 1 1 65%;
+        }
+        & > *:last-child {
+            flex: 1  1 34%;
+        }
+    }
+    .author-post {
+        &__row {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+
+            &:last-child {
+                flex: 1;
+            }
+        }
+        &__text-box {
+            flex: 1;
+        }
+        &__text-box-row {
+           display: flex;
+        }
+    }
+    &__posts {
+        margin-top: 5rem;
+    }
+}
