@@ -3,6 +3,10 @@
 
     .posts {
         padding-right: 4rem;
+
+        @media(max-width: 1200px){
+            padding-right: 0;
+        }
     }
     .author-post {
         &__link {
@@ -17,8 +21,12 @@
         &__paragraph {
             height: 5rem;
             margin: 2rem 0;
-
             background-color: rgba($hierarchy-weight-6, .4);
+        }
+        @media(max-width: 650px) {
+            &__img-box {
+                align-self: flex-start;
+            }
         }
 
     }
@@ -37,6 +45,7 @@
             display: block;
 
             transform: translate(-50%, -50%);
+            top: 0;
             left: 50%;
             width: 10rem;
             height: 10rem;
@@ -142,7 +151,7 @@
         margin-top: 4.5rem;
     }
     &__title {
-        width: 30rem;
+        width: 90%;
         height: 2.5rem;
         margin: 0 auto;
         background-color: $hierarchy-weight-4;
@@ -177,6 +186,9 @@
     background-color: rgba($hierarchy-weight-1, .5);
     padding: 4rem 0 ;
 
+    @media(max-width: 900px){
+       padding: 4rem 3rem;
+    }
     :is(&__container, &__shipping-date, &__btn, &__img-box){
         margin: 0 auto;
     }
@@ -210,15 +222,21 @@
     }
     
     &__img-box {
-        margin-top: 4rem;
         width: 25rem;
         height: 25rem;
+        margin: 0 auto;
+        margin-top: 4rem;
         border-radius: 50%;
         background-color: $hierarchy-weight-3;
+        
+        @media(max-width: 900px){
+            width: 18rem;
+            height: 18rem;
+        }
     }
 }
 .guides {
-
+ 
     .guide {
         padding: 3rem;
         background-color: rgba($hierarchy-weight-7, .4);
@@ -240,7 +258,7 @@
             background-color: $hierarchy-weight-7;
         }
         &__btn {
-            width: 22rem;
+            width: 90%;
             height: 3.5rem;
             background-color: $hierarchy-weight-1;
         }
@@ -258,7 +276,7 @@
         }
         &__title {
             margin-top: 3rem;
-            width: 25rem;
+            width: 90%;
             height: 3rem;
             background-color: rgba($hierarchy-weight-2, .9);
         }
@@ -275,7 +293,7 @@
         &__footer {
             margin: 0 auto;
             margin-top: 1.5rem;
-            width: 25rem;
+            width: 90%;
             height: 5rem;
             background-color: rgba($hierarchy-weight-5, .8);
         }
@@ -324,6 +342,22 @@
         width: 16rem;
         transform: rotate(-10deg);
         background-color: $hierarchy-weight-2;
+        
+        @media(max-width: 1000px){
+            top: -4rem;
+            right: 5rem;
+        }
+        @media(max-width: 900px){
+            right: 9rem;
+        }
+
+        @media(max-width: 750px){
+            top: -3rem;
+            left: 0;
+            width: 15rem;
+            height: 17rem;
+           
+        }
     }
 }
 
@@ -338,6 +372,10 @@
         &__row {
             display: flex;
             gap: 4.5rem;
+
+            @media(max-width: 750px){
+                flex-direction: column;
+            }
         }
         &__box {
             flex: 1;
@@ -355,11 +393,13 @@
     }
     .curated-article {
 
-
         &__row {
             display: flex;
-             
             gap: 2rem;
+
+            @media(max-width: 750px){
+                flex-direction: column;
+            }
         }
         &__text-box {
             flex: 1;
