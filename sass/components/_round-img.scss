@@ -2,7 +2,12 @@
     border-radius: 5px;
     transform: rotate(-10deg);
     background-color: rgba($hierarchy-weight-2, .9);
+    transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
 
+    &:hover {
+        transform: rotate(0);
+    }
     &--xl {
         width: 15rem;
         height: 15rem;

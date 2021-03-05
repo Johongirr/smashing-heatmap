@@ -1,9 +1,10 @@
+:is(.main-heading, .heading-secondary){
+    color: $white;
+}
 .main-heading {
-    background-color: $hierarchy-weight-1;
-    
-    height: 9rem;
+   font: 700 3rem $sans-serif;
 }
 .heading-secondary {
-    background-color: $hierarchy-weight-1;
-    height: 6rem;
+    font: 700 2.6rem $sans-serif;
+    
 }

@@ -1,11 +1,14 @@
 .tags {
-    background-color: $hierarchy-weight-6;
-    width: 6rem;
-    height: 3rem;
     display: flex;
     align-items: center;
     
-    &:is(&__link){
+    &:is(.tag){
         margin-right: 1rem;
+        
     }
+    .tag {
+        font: 600 1.1rem $sans-serif;
+        color: $white;
+    }
+    
 }
