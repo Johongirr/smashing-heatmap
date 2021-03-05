@@ -19,8 +19,7 @@ Give a :star: if u like this project
 
 
 ## Contributing
-Contributions, [issues]() and feature requests are welcome!
+Contributions, [issues](https://github.com/Johongirr/smashing-heatmap) and feature requests are welcome!
 
 
-## Licence
-The project is licenced under the MIT licence
+ 
