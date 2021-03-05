@@ -1,7 +1,7 @@
 # Heatmap of Smashing Magazine
 
 
-> ### Visit to [view]() a project
+> ### Visit to [view](https://johongirr.github.io/smashing-heatmap/) a project
 
 ## Built with
  * HTML5
